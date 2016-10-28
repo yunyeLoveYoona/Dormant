@@ -14,6 +14,8 @@
 		22F174211DC2FB870049F208 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F1741F1DC2FB870049F208 /* LaunchScreen.storyboard */; };
 		22F1742C1DC2FB870049F208 /* DormantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1742B1DC2FB870049F208 /* DormantTests.swift */; };
 		22F174371DC2FB870049F208 /* DormantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F174361DC2FB870049F208 /* DormantUITests.swift */; };
+		22F174461DC2FC170049F208 /* DormantZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F174451DC2FC170049F208 /* DormantZone.swift */; };
+		22F174481DC3144E0049F208 /* MyUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F174471DC3144E0049F208 /* MyUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		22F174321DC2FB870049F208 /* DormantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DormantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F174361DC2FB870049F208 /* DormantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DormantUITests.swift; sourceTree = "<group>"; };
 		22F174381DC2FB870049F208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22F174451DC2FC170049F208 /* DormantZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DormantZone.swift; sourceTree = "<group>"; };
+		22F174471DC3144E0049F208 /* MyUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		22F174151DC2FB870049F208 /* Dormant */ = {
 			isa = PBXGroup;
 			children = (
+				22F174441DC2FB990049F208 /* core */,
 				22F174161DC2FB870049F208 /* AppDelegate.swift */,
 				22F174181DC2FB870049F208 /* ViewController.swift */,
 				22F1741A1DC2FB870049F208 /* Main.storyboard */,
 				22F1741D1DC2FB870049F208 /* Assets.xcassets */,
 				22F1741F1DC2FB870049F208 /* LaunchScreen.storyboard */,
 				22F174221DC2FB870049F208 /* Info.plist */,
+				22F174471DC3144E0049F208 /* MyUIView.swift */,
 			);
 			path = Dormant;
 			sourceTree = "<group>";
@@ -123,6 +129,14 @@
 				22F174381DC2FB870049F208 /* Info.plist */,
 			);
 			path = DormantUITests;
+			sourceTree = "<group>";
+		};
+		22F174441DC2FB990049F208 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				22F174451DC2FC170049F208 /* DormantZone.swift */,
+			);
+			name = core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F174481DC3144E0049F208 /* MyUIView.swift in Sources */,
 				22F174191DC2FB870049F208 /* ViewController.swift in Sources */,
 				22F174171DC2FB870049F208 /* AppDelegate.swift in Sources */,
+				22F174461DC2FC170049F208 /* DormantZone.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
